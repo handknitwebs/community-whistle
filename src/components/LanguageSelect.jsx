@@ -1,15 +1,52 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { IconChevronSmall } from './Icons'
-
-const LANGUAGE_OPTIONS = [
-  { code: 'en', label: 'English' },
-  { code: 'es', label: 'Español' }
-]
+import { LANGUAGE_OPTIONS } from '../data/languages'
 
 const LanguageSelect = ({ language = 'en', onChange = () => { }, inverse = false }) => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [hoverEnabled, setHoverEnabled] = useState(false)
   const currentOption = LANGUAGE_OPTIONS.find((option) => option.code === language)
   const currentLabel = currentOption ? currentOption.code.toUpperCase() : 'EN'
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return
+
+    const hoverQuery = window.matchMedia('(hover: hover) and (pointer: fine)')
+    const widthQuery = window.matchMedia('(min-width: 1201px)')
+
+    const updateHoverEnabled = () => setHoverEnabled(hoverQuery.matches && widthQuery.matches)
+
+    const canListenToHover = typeof hoverQuery.addEventListener === 'function'
+    const canListenToWidth = typeof widthQuery.addEventListener === 'function'
+
+    updateHoverEnabled()
+
+    if (canListenToHover) {
+      hoverQuery.addEventListener('change', updateHoverEnabled)
+    } else {
+      hoverQuery.onchange = updateHoverEnabled
+    }
+
+    if (canListenToWidth) {
+      widthQuery.addEventListener('change', updateHoverEnabled)
+    } else {
+      widthQuery.onchange = updateHoverEnabled
+    }
+
+    return () => {
+      if (canListenToHover) {
+        hoverQuery.removeEventListener('change', updateHoverEnabled)
+      } else if (hoverQuery.onchange === updateHoverEnabled) {
+        hoverQuery.onchange = null
+      }
+
+      if (canListenToWidth) {
+        widthQuery.removeEventListener('change', updateHoverEnabled)
+      } else if (widthQuery.onchange === updateHoverEnabled) {
+        widthQuery.onchange = null
+      }
+    }
+  }, [])
 
   const handleSelect = (code) => {
     if (code !== language) {
@@ -18,11 +55,27 @@ const LanguageSelect = ({ language = 'en', onChange = () => { }, inverse = false
     setMenuOpen(false)
   }
 
+  const handlePointerEnter = () => {
+    if (hoverEnabled) {
+      setMenuOpen(true)
+    }
+  }
+
+  const handlePointerLeave = () => {
+    if (hoverEnabled) {
+      setMenuOpen(false)
+    }
+  }
+
+  const handleToggleClick = () => {
+    setMenuOpen((prev) => !prev)
+  }
+
   return (
     <div
       className={`language-select ${inverse ? 'inverse' : ''}`}
-      onMouseEnter={() => setMenuOpen(true)}
-      onMouseLeave={() => setMenuOpen(false)}
+      onMouseEnter={handlePointerEnter}
+      onMouseLeave={handlePointerLeave}
       onFocus={() => setMenuOpen(true)}
       onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) {
@@ -35,6 +88,7 @@ const LanguageSelect = ({ language = 'en', onChange = () => { }, inverse = false
         type="button"
         aria-haspopup="menu"
         aria-expanded={menuOpen}
+        onClick={handleToggleClick}
       >
         <span className="language-select__label roboto-400 text-box">{currentLabel}</span>
         <IconChevronSmall />

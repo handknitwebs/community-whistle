@@ -1,0 +1,177 @@
+{
+  "navLinks": [
+    {
+      "href": "#why",
+      "label": "Vì sao dùng còi?"
+    },
+    {
+      "href": "#codes",
+      "label": "Mã cần học"
+    },
+    {
+      "href": "#streets",
+      "label": "Trên đường phố"
+    },
+    {
+      "href": "#why-it-works",
+      "label": "Vì sao hiệu quả"
+    },
+    {
+      "href": "#actions",
+      "label": "Bạn có thể làm gì"
+    },
+    {
+      "href": "#resources",
+      "label": "Tài nguyên"
+    },
+    {
+      "href": "#contact",
+      "label": "Liên hệ"
+    }
+  ],
+  "nav": {
+    "logoAlt": "Biểu trưng còi cộng đồng",
+    "primaryLabel": "Điều hướng chính",
+    "mobileLabel": "Điều hướng trên di động",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu"
+  },
+  "hero": {
+    "titleLines": [
+      "Cùng nhau,",
+      "chúng ta giữ an toàn cho cộng đồng."
+    ],
+    "imageAlt": "Minh họa một chiếc còi kêu gọi đám đông",
+    "note": "<strong>Chiếc còi là biểu tượng của sự đoàn kết cộng đồng và là một công cụ thiết thực.</strong> Còi thực sự không phải để quấy rối một số đặc vụ che mặt. Nó dùng để báo cho hàng xóm biết rằng đang có nguy cơ mất an toàn. Vui lòng lưu ý và giữ an toàn."
+  },
+  "navHotlineLabel": "Tìm đường dây nóng",
+  "hotlineLabel": "Tìm đường dây nóng",
+  "alertBanner": {
+    "title": "Đường dây nóng di trú cho khu vực của bạn",
+    "useLocation": "Dùng vị trí của tôi",
+    "loading": "Đang tìm đường dây nóng gần nhất…",
+    "fallback": "Đang hiển thị danh sách đường dây nóng toàn quốc.",
+    "resolved": "Đang hiển thị đường dây nóng cho {{area}}.",
+    "stateUnavailable": "Chưa có đường dây nóng cho {{area}}. Đang hiển thị danh sách toàn quốc.",
+    "denied": "Quyền truy cập vị trí bị từ chối. Đang hiển thị danh sách toàn quốc.",
+    "unavailable": "Không thể lấy vị trí. Đang hiển thị danh sách toàn quốc.",
+    "outside": "Vị trí ở ngoài Hoa Kỳ. Đang hiển thị danh sách toàn quốc.",
+    "unsupported": "Thiết bị không hỗ trợ định vị. Đang hiển thị danh sách toàn quốc.",
+    "hotlineCtaDefault": "Xem đường dây nóng toàn quốc",
+    "hotlineCtaState": "Xem đường dây nóng của {{area}}",
+    "dismiss": "Đóng"
+  },
+  "codesSectionTitle": "Mã cần học",
+  "codesSectionNote": "<strong>Không thổi liên tục.</strong> Tiếng còi liên tục ngăn việc ghi lại âm thanh quan trọng trong video, bao gồm những gì người bị bắt cóc nói (như số điện thoại) hoặc những gì kẻ bắt cóc đang nói.",
+  "whistleCodes": [
+    {
+      "title": "Mã 1: Nguy hiểm gần",
+      "rhythm": "PRE-PRE-PRE",
+      "instruction": "Thổi ngắn:",
+      "details": [
+        "Điều này cảnh báo cộng đồng rằng đặc vụ đang ở khu vực."
+      ],
+      "emphasis": null
+    },
+    {
+      "title": "Mã 2: Mã đỏ",
+      "rhythm": "PREEEE–PREEEE–PREEEEE",
+      "instruction": "Thổi dài:",
+      "details": [
+        "Đặc vụ đang bắt giữ ai đó.",
+        "TẬP HỢP ĐÔNG ĐÚC, HÃY LÊN TIẾNG."
+      ],
+      "emphasis": "TẬP HỢP ĐÔNG ĐÚC, HÃY LÊN TIẾNG."
+    }
+  ],
+  "guidanceSections": [
+    {
+      "id": "why",
+      "title": "Vì sao dùng còi?",
+      "intro": null,
+      "items": [
+        "Một công cụ đơn giản để báo động nhanh.",
+        "To. Dễ nhận biết. Không thể phớt lờ.",
+        "Tiếng nói của chúng ta mạnh hơn khi cùng nhau."
+      ],
+      "footer": null
+    },
+    {
+      "id": "streets",
+      "title": "Trên đường phố",
+      "intro": "Tiếng còi hướng đến tất cả mọi người.",
+      "items": [
+        "Theo các đoàn xe của Mật vụ",
+        "Bắt kịp đám đông",
+        "Tiếng nói của chúng ta mạnh hơn khi ở bên nhau"
+      ],
+      "footer": "Tiếng ồn = Sự hiện diện"
+    },
+    {
+      "id": "why-it-works",
+      "title": "Vì sao hiệu quả",
+      "intro": null,
+      "items": [
+        "Hệ thống báo động tức thì",
+        "Nhanh hơn mạng xã hội",
+        "Biến im lặng thành hành động cộng đồng"
+      ],
+      "footer": null
+    },
+    {
+      "id": "actions",
+      "title": "Bạn có thể làm gì",
+      "intro": null,
+      "items": [
+        "Đeo còi quanh cổ",
+        "Dạy gia đình và hàng xóm các mã",
+        "Dùng khi thấy đặc vụ"
+      ],
+      "footer": "Luôn bảo vệ lẫn nhau"
+    }
+  ],
+  "statement": {
+    "lines": [
+      "Hãy giữ ôn hòa.",
+      "Đừng im lặng."
+    ]
+  },
+  "resources": {
+    "title": "Tài nguyên",
+    "intro": "Có ai trong gia đình bạn bị đặc vụ bắt giữ hoặc bạn là nhân chứng của một cuộc truy quét của đặc vụ trong cộng đồng của bạn không?",
+    "toggleLabel": "Thêm tài nguyên địa phương",
+    "cardsLabel": "Thẻ tài nguyên địa phương",
+    "closeMenuLabel": "Đóng menu tài nguyên địa phương"
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "intro": "Có câu hỏi hoặc góp ý? Hãy dùng biểu mẫu dưới đây để liên hệ quản trị viên trang web. Chúng tôi sẽ phản hồi sớm nhất có thể.",
+    "labels": {
+      "name": "Tên của bạn (bắt buộc)",
+      "email": "Địa chỉ email (bắt buộc)",
+      "message": "Tin nhắn của bạn (bắt buộc)"
+    },
+    "placeholders": {
+      "name": "Fran Wilson",
+      "email": "name@domain.com",
+      "message": "Vui lòng nhập tin nhắn của bạn..."
+    },
+    "submit": "Gửi",
+    "statusMessages": {
+      "requiredFields": "Vui lòng điền tất cả các trường bắt buộc.",
+      "demoOnly": "Cảm ơn! Bản xem trước này chỉ để minh họa—tin nhắn không được gửi từ bản dựng này.",
+      "missingConfig": "Dịch vụ email chưa được cấu hình. Vui lòng thử lại sau.",
+      "sent": "Cảm ơn! Chúng tôi đã nhận được tin nhắn của bạn.",
+      "genericError": "Đã xảy ra lỗi. Vui lòng thử lại sau.",
+      "sending": "Đang gửi…"
+    }
+  },
+  "credit": {
+    "caption": "Những tài liệu này được cộng đồng tạo ra cho cộng đồng. <br />Xin cảm ơn @pilsenartscommunityhouse ở Chicago vì sự hào phóng của họ!",
+    "imageAlt": "Minh họa khắc gỗ về một chiếc còi"
+  },
+  "footer": {
+    "prompt": "Có ai trong gia đình bạn bị đặc vụ bắt giữ hoặc bạn là nhân chứng của một cuộc truy quét trong cộng đồng của bạn không?",
+    "hotlineLabel": "Tìm đường dây nóng"
+  }
+}

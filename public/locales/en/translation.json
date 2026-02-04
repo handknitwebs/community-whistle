@@ -1,0 +1,177 @@
+{
+  "navLinks": [
+    {
+      "href": "#why",
+      "label": "Why a Whistle?"
+    },
+    {
+      "href": "#codes",
+      "label": "Codes to Learn"
+    },
+    {
+      "href": "#streets",
+      "label": "On the Streets"
+    },
+    {
+      "href": "#why-it-works",
+      "label": "Why it Works"
+    },
+    {
+      "href": "#actions",
+      "label": "What You Can Do"
+    },
+    {
+      "href": "#resources",
+      "label": "Resources"
+    },
+    {
+      "href": "#contact",
+      "label": "Contact"
+    }
+  ],
+  "nav": {
+    "logoAlt": "Community whistle logo",
+    "primaryLabel": "Primary navigation",
+    "mobileLabel": "Mobile navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "titleLines": [
+      "Together,",
+      "we keep our community safe."
+    ],
+    "imageAlt": "Illustration of a whistle rallying a crowd",
+    "note": "<strong>The whistle is a symbol of community solidarity and a functional tool.</strong> Whistles really are not for harassing certain masked agents. They are for letting neighbors know there is a safety risk present. Please be mindful and safe."
+  },
+  "navHotlineLabel": "Find a hotline",
+  "hotlineLabel": "Find a Hotline",
+  "alertBanner": {
+    "title": "Immigration hotline for your area",
+    "useLocation": "Use my location",
+    "loading": "Finding the nearest hotline…",
+    "fallback": "Showing national hotline list.",
+    "resolved": "Showing hotline for {{area}}.",
+    "stateUnavailable": "We don’t have a hotline for {{area}} yet. Showing national hotline list.",
+    "denied": "Location access denied. Showing national hotline list.",
+    "unavailable": "Location unavailable. Showing national hotline list.",
+    "outside": "Location is outside the U.S. Showing national hotline list.",
+    "unsupported": "Location services aren’t supported here. Showing national hotline list.",
+    "hotlineCtaDefault": "View national hotlines",
+    "hotlineCtaState": "View hotline for {{area}}",
+    "dismiss": "Dismiss"
+  },
+  "codesSectionTitle": "Codes to Learn",
+  "codesSectionNote": "<strong>Do not blow continuously.</strong> Continuous whistle noise prevents important audio from being captured on video, including anything the abductee says (such as a phone number) or anything the abductors are saying.",
+  "whistleCodes": [
+    {
+      "title": "Code 1: Danger Nearby",
+      "rhythm": "PRE-PRE-PRE",
+      "instruction": "Blow in short bursts:",
+      "details": [
+        "This alerts the community that agents are in the area."
+      ],
+      "emphasis": null
+    },
+    {
+      "title": "Code 2: Code Red",
+      "rhythm": "PREEEE–PREEEE–PREEEEE",
+      "instruction": "Blow in long blasts:",
+      "details": [
+        "Agents are detaining someone.",
+        "FORM A CROWD, STAY LOUD."
+      ],
+      "emphasis": "FORM A CROWD, STAY LOUD."
+    }
+  ],
+  "guidanceSections": [
+    {
+      "id": "why",
+      "title": "Why a Whistle?",
+      "intro": null,
+      "items": [
+        "A simple tool for fast alerts.",
+        "Loud. Recognizable. Impossible to ignore.",
+        "Our voices are stronger together."
+      ],
+      "footer": null
+    },
+    {
+      "id": "streets",
+      "title": "On the Streets",
+      "intro": "Whistles guide people to",
+      "items": [
+        "Follow agent caravans",
+        "Catch up with the crowd",
+        "Our voices are stronger together"
+      ],
+      "footer": "Noise = Visibility"
+    },
+    {
+      "id": "why-it-works",
+      "title": "Why it Works",
+      "intro": null,
+      "items": [
+        "Instant alert system",
+        "Faster than social media",
+        "Turns silence into community action"
+      ],
+      "footer": null
+    },
+    {
+      "id": "actions",
+      "title": "What You Can Do",
+      "intro": null,
+      "items": [
+        "Wear your whistle around your neck",
+        "Teach family and neighbors the codes",
+        "Use it when agents are spotted"
+      ],
+      "footer": "Protect each other, always"
+    }
+  ],
+  "statement": {
+    "lines": [
+      "Stay nonviolent.",
+      "Don’t stay silent."
+    ]
+  },
+  "resources": {
+    "title": "Resources",
+    "intro": "Has someone in your family been detained by agents or are you a witness of an agent raid in your community?",
+    "toggleLabel": "More local resources",
+    "cardsLabel": "Local resource cards",
+    "closeMenuLabel": "Close local resources menu"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "intro": "Have a question or suggestion? Use the form below to reach our site admins. We’ll respond as quickly as possible.",
+    "labels": {
+      "name": "Your Name (required)",
+      "email": "Email Address (required)",
+      "message": "Your Message (required)"
+    },
+    "placeholders": {
+      "name": "Fran Wilson",
+      "email": "name@domain.com",
+      "message": "Please type your message here..."
+    },
+    "submit": "Submit",
+    "statusMessages": {
+      "requiredFields": "Please fill out all required fields.",
+      "demoOnly": "Thanks! This preview is for demo only—messages are not sent from this build.",
+      "missingConfig": "Email service is not configured yet. Please try again later.",
+      "sent": "Thanks! We received your message.",
+      "genericError": "Something went wrong. Please try again later.",
+      "sending": "Sending…"
+    }
+  },
+  "credit": {
+    "caption": "These materials were created by the community for the community. <br />Special thanks to @pilsenartscommunityhouse in Chicago for their generosity!",
+    "imageAlt": "Woodcut illustration of a whistle"
+  },
+  "footer": {
+    "prompt": "Has someone in your family been detained by agents or are you a witness of a raid in your community?",
+    "hotlineLabel": "Find a Hotline"
+  }
+}

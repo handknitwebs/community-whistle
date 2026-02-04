@@ -1,0 +1,177 @@
+{
+  "navLinks": [
+    {
+      "href": "#why",
+      "label": "Maxaa Foori?"
+    },
+    {
+      "href": "#codes",
+      "label": "Koodhadhka La Barto"
+    },
+    {
+      "href": "#streets",
+      "label": "Waddooyinka"
+    },
+    {
+      "href": "#why-it-works",
+      "label": "Sababta ay u Shaqeyso"
+    },
+    {
+      "href": "#actions",
+      "label": "Waxaad Samayn Karto"
+    },
+    {
+      "href": "#resources",
+      "label": "Ilo"
+    },
+    {
+      "href": "#contact",
+      "label": "Xiriir"
+    }
+  ],
+  "nav": {
+    "logoAlt": "Calaamadda fooriga bulshada",
+    "primaryLabel": "Hagista koowaad",
+    "mobileLabel": "Hagista moobilka",
+    "openMenu": "Fur menu-ga",
+    "closeMenu": "Xir menu-ga"
+  },
+  "hero": {
+    "titleLines": [
+      "Wadajir,",
+      "waxaan ilaalinaa bulshadeena."
+    ],
+    "imageAlt": "Sawir muujinaya foori dadka isu keenaya",
+    "note": "<strong>Foorigu waa astaan muujinaysa isku-duubnida bulshada isla markaana waa qalab shaqo.</strong> Fooriyada dhab ahaantii looguma talagelin in lagu dhibo wakiillo waji-daboolan. Waxaa loogu talagalay in deriska lagu wargeliyo in khatar amni jirto. Fadlan feejignow oo badbaado ku sugnaaw."
+  },
+  "navHotlineLabel": "Raadi khadka degdegga ah",
+  "hotlineLabel": "Raadi khadka degdegga ah",
+  "alertBanner": {
+    "title": "Lambarka degdegga ee socdaalka ee aaggaaga",
+    "useLocation": "Isticmaal goobtayda",
+    "loading": "Waxaa la raadinayaa lambarka degdegga ee kuugu dhow…",
+    "fallback": "Waxaa la muujinayaa liiska lambarrada degdegga ee qaranka.",
+    "resolved": "Waxaa la muujinayaa lambarka degdegga ee {{area}}.",
+    "stateUnavailable": "Wali ma hayno lambarka degdegga ee {{area}}. Waxaa la muujinayaa liiska qaranka.",
+    "denied": "Ogolaanshaha goobta waa la diiday. Waxaa la muujinayaa liiska qaranka.",
+    "unavailable": "Goobta lama heli karo. Waxaa la muujinayaa liiska qaranka.",
+    "outside": "Goobtu waxay ka baxsan tahay Mareykanka. Waxaa la muujinayaa liiska qaranka.",
+    "unsupported": "Adeegga goobta halkan kama shaqeeyo. Waxaa la muujinayaa liiska qaranka.",
+    "hotlineCtaDefault": "Eeg lambarrada degdegga ee qaranka",
+    "hotlineCtaState": "Eeg lambarka degdegga ee {{area}}",
+    "dismiss": "Xir"
+  },
+  "codesSectionTitle": "Koodhadhka La Barto",
+  "codesSectionNote": "<strong>Ha afuufin si joogto ah.</strong> Buuqa fooriga ee joogtada ah wuxuu ka hor istaagaa in cod muhiim ah lagu duubo muuqaalka, oo ay ku jiraan waxa qofka la afduubay sheegay (sida lambar telefoon) ama waxa afduubayaasha ay sheegayaan.",
+  "whistleCodes": [
+    {
+      "title": "Koodh 1: Khatar Dhow",
+      "rhythm": "PRE-PRE-PRE",
+      "instruction": "Afuuf si gaagaaban:",
+      "details": [
+        "Tani waxay u digtaa bulshada in wakiilladu ay ku dhow yihiin."
+      ],
+      "emphasis": null
+    },
+    {
+      "title": "Koodh 2: Koodh Cas",
+      "rhythm": "PREEEE–PREEEE–PREEEEE",
+      "instruction": "Afuuf si dheer:",
+      "details": [
+        "Wakiilladu waxay xireen qof.",
+        "ISU SOO URURIYA, HA BUUQNAAN."
+      ],
+      "emphasis": "ISU SOO URURIYA, HA BUUQNAAN."
+    }
+  ],
+  "guidanceSections": [
+    {
+      "id": "why",
+      "title": "Maxaa Foori?",
+      "intro": null,
+      "items": [
+        "Qalab fudud oo digniin degdeg ah.",
+        "Cod dheer. La garan karo. Lama indho-tiri karo.",
+        "Codkeenu wuu ka xoog badan yahay marka aan wadajir nahay."
+      ],
+      "footer": null
+    },
+    {
+      "id": "streets",
+      "title": "Waddooyinka",
+      "intro": "Fooriyadu waxay dadka ku hagaan inay",
+      "items": [
+        "Raacaan kolonyada wakiillada",
+        "La gaaraan dadka is uruursan",
+        "Codkeenu wuu ka xoog badan yahay marka aan wadajir nahay"
+      ],
+      "footer": "Buuq = Muuqasho"
+    },
+    {
+      "id": "why-it-works",
+      "title": "Sababta ay u Shaqeyso",
+      "intro": null,
+      "items": [
+        "Nidaam digniin degdeg ah",
+        "Ka dheereeya baraha bulshada",
+        "Aamusnaanta u beddela ficil bulsho"
+      ],
+      "footer": null
+    },
+    {
+      "id": "actions",
+      "title": "Waxaad Samayn Karto",
+      "intro": null,
+      "items": [
+        "Fooriga ku xir qoortaada",
+        "Bar qoyska iyo deriska koodhadhka",
+        "U isticmaal marka wakiillo la arko"
+      ],
+      "footer": "Is ilaaliya, mar walba"
+    }
+  ],
+  "statement": {
+    "lines": [
+      "Ha rabshadeyn.",
+      "Ha aamusnaanin."
+    ]
+  },
+  "resources": {
+    "title": "Ilo",
+    "intro": "Ma xireen wakiillo qof ka tirsan qoyskaaga mise waxaad markhaati u tahay weerar ay wakiilladu ka sameeyeen bulshadaada?",
+    "toggleLabel": "Ilo dheeraad ah oo deegaanka ah",
+    "cardsLabel": "Kaadhadhka ilaha deegaanka",
+    "closeMenuLabel": "Xir menu-ga ilaha deegaanka"
+  },
+  "contact": {
+    "title": "Nala Soo Xiriir",
+    "intro": "Ma qabtaa su'aal ama talo? Isticmaal foomka hoose si aad ula xiriirto maamulayaasha bogga. Waxaan ku soo jawaabi doonnaa sida ugu dhaqsaha badan.",
+    "labels": {
+      "name": "Magacaaga (lagama maarmaan)",
+      "email": "Cinwaanka iimaylka (lagama maarmaan)",
+      "message": "Fariintaada (lagama maarmaan)"
+    },
+    "placeholders": {
+      "name": "Fran Wilson",
+      "email": "name@domain.com",
+      "message": "Fadlan halkan ku qor fariintaada..."
+    },
+    "submit": "Gudbi",
+    "statusMessages": {
+      "requiredFields": "Fadlan buuxi dhammaan meelaha lagama maarmaanka ah.",
+      "demoOnly": "Mahadsanid! Tani waa kaliya tusaale; fariimaha lagama diro noocan.",
+      "missingConfig": "Adeegga iimaylka wali lama habeyn. Fadlan mar kale isku day goor dambe.",
+      "sent": "Mahadsanid! Waxaan helnay fariintaada.",
+      "genericError": "Wax khalad ah ayaa dhacay. Fadlan mar kale isku day goor dambe.",
+      "sending": "Diraya..."
+    }
+  },
+  "credit": {
+    "caption": "Qalabkan waxaa sameeyay bulshada, loogu talagalay bulshada. <br />Mahad gaar ah @pilsenartscommunityhouse ee Chicago deeqsinimadooda awgeed!",
+    "imageAlt": "Sawir xardhan qoryo oo foori ah"
+  },
+  "footer": {
+    "prompt": "Ma xireen wakiillo qof ka tirsan qoyskaaga mise waxaad markhaati u tahay weerar ay wakiilladu ka sameeyeen bulshadaada?",
+    "hotlineLabel": "Raadi khadka degdegga ah"
+  }
+}

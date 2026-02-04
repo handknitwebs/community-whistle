@@ -1,9 +1,15 @@
 import { IconArrow } from '../components/Icons'
 
-function CodesSection({ codes, title = 'Codes to Learn' }) {
+function CodesSection({ codes, title = 'Codes to Learn', note }) {
   return (
     <section id="codes" className="panel codes-panel">
       <h2 className="section-title archivo-800">{title}</h2>
+      {note && (
+        <p
+          className="code-note body-medium roboto-400"
+          dangerouslySetInnerHTML={{ __html: note }}
+        />
+      )}
       {codes.map((code) => (
         <article key={code.title} className="code-card">
           <h3 className="code-title archivo-800">{code.title}</h3>

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 const defaultCopy = {
   title: 'Contact Us',
@@ -13,13 +14,32 @@ const defaultCopy = {
     email: 'name@domain.com',
     message: 'Please type your message here...'
   },
-  submit: 'Submit'
+  submit: 'Submit',
+  statusMessages: {
+    requiredFields: 'Please fill out all required fields.',
+    demoOnly: 'Thanks! This preview is for demo only—messages are not sent from this build.',
+    missingConfig: 'Email service is not configured yet. Please try again later.',
+    sent: 'Thanks! We received your message.',
+    genericError: 'Something went wrong. Please try again later.',
+    sending: 'Sending…'
+  }
 }
 
-const ContactSection = ({ copy = defaultCopy }) => {
+const ContactSection = ({ copy }) => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [status, setStatus] = useState({ state: 'idle', message: '' })
   const contactEnabled = import.meta.env.VITE_CONTACT_ENABLED === 'true'
+  const mergedCopy = {
+    ...defaultCopy,
+    ...(copy || {}),
+    labels: { ...defaultCopy.labels, ...(copy?.labels || {}) },
+    placeholders: { ...defaultCopy.placeholders, ...(copy?.placeholders || {}) },
+    statusMessages: { ...defaultCopy.statusMessages, ...(copy?.statusMessages || {}) }
+  }
+  const statusMessages = mergedCopy.statusMessages
+  const emailJsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  const emailJsServiceId = 'service_9gu61cf'
+  const emailJsTemplateId = 'template_fn94ycm'
 
   const handleChange = (event) => {
     const { name, value } = event.target
@@ -29,14 +49,14 @@ const ContactSection = ({ copy = defaultCopy }) => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
-      setStatus({ state: 'error', message: 'Please fill out all required fields.' })
+      setStatus({ state: 'error', message: statusMessages.requiredFields })
       return
     }
 
     if (!contactEnabled) {
       setStatus({
         state: 'sent',
-        message: 'Thanks! This preview is for demo only—messages are not sent from this build.'
+        message: statusMessages.demoOnly
       })
       setFormData({ name: '', email: '', message: '' })
       return
@@ -44,68 +64,69 @@ const ContactSection = ({ copy = defaultCopy }) => {
 
     setStatus({ state: 'sending', message: '' })
 
+    if (!emailJsPublicKey) {
+      setStatus({ state: 'error', message: statusMessages.missingConfig })
+      return
+    }
+
     try {
-      const response = await fetch('/contact.php', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      })
-      let data = {}
-      try {
-        data = await response.json()
-      } catch {
-        data = {}
-      }
+      await emailjs.send(
+        emailJsServiceId,
+        emailJsTemplateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          time: new Date().toLocaleString()
+        },
+        { publicKey: emailJsPublicKey }
+      )
 
-      if (!response.ok || !data.ok) {
-        throw new Error(data.error || 'Send failed. Please try again.')
-      }
-
-      setStatus({ state: 'sent', message: 'Thanks! We received your message.' })
+      setStatus({ state: 'sent', message: statusMessages.sent })
       setFormData({ name: '', email: '', message: '' })
     } catch (error) {
-      setStatus({ state: 'error', message: error.message || 'Something went wrong. Please try again later.' })
+      setStatus({ state: 'error', message: statusMessages.genericError })
     }
   }
 
   return (
     <section id="contact" className="panel contact-panel flex-container flex-dir-col">
-      <h2 className="section-title archivo-800">{copy.title}</h2>
+      <h2 className="section-title archivo-800">{mergedCopy.title}</h2>
       <p className="body-medium roboto-400 text-center">
-        {copy.intro}
+        {mergedCopy.intro}
       </p>
       <form className="contact-form" onSubmit={handleSubmit} noValidate>
         <label htmlFor="name" className="roboto-400 body-medium">
-          <span>{copy.labels.name}</span>
+          <span>{mergedCopy.labels.name}</span>
           <input
             id="name"
             type="text"
             name="name"
-            placeholder={copy.placeholders.name}
+            placeholder={mergedCopy.placeholders.name}
             value={formData.name}
             onChange={handleChange}
             required
           />
         </label>
         <label htmlFor="email" className="roboto-400 body-medium">
-          <span>{copy.labels.email}</span>
+          <span>{mergedCopy.labels.email}</span>
           <input
             id="email"
             type="email"
             name="email"
-            placeholder={copy.placeholders.email}
+            placeholder={mergedCopy.placeholders.email}
             value={formData.email}
             onChange={handleChange}
             required
           />
         </label>
         <label htmlFor="message" className="roboto-400 body-medium">
-          <span>{copy.labels.message}</span>
+          <span>{mergedCopy.labels.message}</span>
           <textarea
             id="message"
             name="message"
             rows="5"
-            placeholder={copy.placeholders.message}
+            placeholder={mergedCopy.placeholders.message}
             value={formData.message}
             onChange={handleChange}
             required
@@ -116,7 +137,7 @@ const ContactSection = ({ copy = defaultCopy }) => {
           className="submit-button hotline-button archivo-800 body-xlarge"
           disabled={status.state === 'sending'}
         >
-          {status.state === 'sending' ? 'Sending…' : copy.submit}
+          {status.state === 'sending' ? statusMessages.sending : mergedCopy.submit}
         </button>
         {status.state !== 'idle' && status.message && (
           <p

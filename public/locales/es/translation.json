@@ -1,0 +1,177 @@
+{
+  "navLinks": [
+    {
+      "href": "#why",
+      "label": "¿Por qué un silbato?"
+    },
+    {
+      "href": "#codes",
+      "label": "Códigos para aprender"
+    },
+    {
+      "href": "#streets",
+      "label": "En las calles"
+    },
+    {
+      "href": "#why-it-works",
+      "label": "Por qué funciona"
+    },
+    {
+      "href": "#actions",
+      "label": "Lo que puedes hacer"
+    },
+    {
+      "href": "#resources",
+      "label": "Recursos"
+    },
+    {
+      "href": "#contact",
+      "label": "Contacto"
+    }
+  ],
+  "nav": {
+    "logoAlt": "Logotipo de Community Whistle",
+    "primaryLabel": "Navegación principal",
+    "mobileLabel": "Navegación móvil",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "hero": {
+    "titleLines": [
+      "Juntos,",
+      "mantenemos segura a nuestra comunidad."
+    ],
+    "imageAlt": "Ilustración de un silbato convocando a una multitud.",
+    "note": "<strong>El silbato es un símbolo de solidaridad comunitaria y una herramienta funcional.</strong> En realidad, los silbatos no son para acosar a ciertos agentes enmascarados. Son para avisar a los vecinos que hay un riesgo de seguridad presente. Por favor, actúa con prudencia y mantente a salvo."
+  },
+  "navHotlineLabel": "Encuentra una línea directa",
+  "hotlineLabel": "Encuentra una línea directa",
+  "alertBanner": {
+    "title": "Línea directa de inmigración en tu área",
+    "useLocation": "Usar mi ubicación",
+    "loading": "Buscando la línea directa más cercana…",
+    "fallback": "Mostrando la lista nacional de líneas directas.",
+    "resolved": "Mostrando la línea directa para {{area}}.",
+    "stateUnavailable": "Aún no tenemos una línea directa para {{area}}. Mostrando la lista nacional.",
+    "denied": "Acceso a la ubicación denegado. Mostrando la lista nacional.",
+    "unavailable": "Ubicación no disponible. Mostrando la lista nacional.",
+    "outside": "La ubicación está fuera de EE. UU. Mostrando la lista nacional.",
+    "unsupported": "El servicio de ubicación no es compatible aquí. Mostrando la lista nacional.",
+    "hotlineCtaDefault": "Ver líneas directas nacionales",
+    "hotlineCtaState": "Ver línea directa de {{area}}",
+    "dismiss": "Cerrar"
+  },
+  "codesSectionTitle": "Códigos para aprender",
+  "codesSectionNote": "<strong>No soples de forma continua.</strong> El sonido continuo del silbato impide que se capture audio importante en video, incluyendo lo que diga la persona secuestrada (como un número de teléfono) o lo que estén diciendo los secuestradores.",
+  "whistleCodes": [
+    {
+      "title": "Código 1: Peligro cerca",
+      "rhythm": "PRE-PRE-PRE",
+      "instruction": "Sopla en ráfagas cortas:",
+      "details": [
+        "Esto alerta a la comunidad de que hay agentes en el área."
+      ],
+      "emphasis": null
+    },
+    {
+      "title": "Código 2: Código rojo",
+      "rhythm": "PREEEE–PREEEE–PREEEEE",
+      "instruction": "Sopla en explosiones largas:",
+      "details": [
+        "Los agentes están deteniendo a alguien.",
+        "FORMA UNA MULTITUD, HAZ RUIDO."
+      ],
+      "emphasis": "FORMA UNA MULTITUD, HAZ RUIDO."
+    }
+  ],
+  "guidanceSections": [
+    {
+      "id": "why",
+      "title": "¿Por qué un silbato?",
+      "intro": null,
+      "items": [
+        "Una herramienta simple para alertas rápidas.",
+        "Ruidoso. Reconocible. <br />Imposible de ignorar.",
+        "Nuestras voces son más fuertes juntas."
+      ],
+      "footer": null
+    },
+    {
+      "id": "streets",
+      "title": "En las calles",
+      "intro": "Los silbatos guían a la gente a",
+      "items": [
+        "Seguir caravanas de agentes",
+        "Alcanzar a la multitud",
+        "Nuestras voces son más fuertes juntas"
+      ],
+      "footer": "Ruido = Visibilidad"
+    },
+    {
+      "id": "why-it-works",
+      "title": "Por qué funciona",
+      "intro": null,
+      "items": [
+        "Sistema de alerta instantáneo",
+        "Más rápido que las redes sociales",
+        "Convierte el silencio en acción comunitaria"
+      ],
+      "footer": null
+    },
+    {
+      "id": "actions",
+      "title": "Lo que puedes hacer",
+      "intro": null,
+      "items": [
+        "Lleva tu silbato alrededor del cuello",
+        "Enseña los códigos a tu familia y vecinos",
+        "Úsalo cuando se vean agentes"
+      ],
+      "footer": "Protéjanse mutuamente, siempre"
+    }
+  ],
+  "statement": {
+    "lines": [
+      "Mantente pacífico.",
+      "No te quedes en silencio."
+    ]
+  },
+  "resources": {
+    "title": "Recursos",
+    "intro": "¿Han detenido a alguien de tu familia los agentes o eres testigo de una redada en tu comunidad?",
+    "toggleLabel": "Más recursos locales",
+    "cardsLabel": "Tarjetas de recursos locales",
+    "closeMenuLabel": "Cerrar el menú de recursos locales"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "intro": "¿Tienes una pregunta o sugerencia? Usa el formulario para comunicarte con los administradores del sitio. Responderemos lo más rápido posible.",
+    "labels": {
+      "name": "Tu nombre (requerido)",
+      "email": "Correo electrónico (requerido)",
+      "message": "Tu mensaje (requerido)"
+    },
+    "placeholders": {
+      "name": "Fran Wilson",
+      "email": "name@domain.com",
+      "message": "Escribe tu mensaje aquí..."
+    },
+    "submit": "Enviar",
+    "statusMessages": {
+      "requiredFields": "Por favor completa todos los campos requeridos.",
+      "demoOnly": "¡Gracias! Esta vista previa es solo para demostración; los mensajes no se envían desde esta versión.",
+      "missingConfig": "El servicio de correo aún no está configurado. Por favor inténtalo de nuevo más tarde.",
+      "sent": "¡Gracias! Hemos recibido tu mensaje.",
+      "genericError": "Algo salió mal. Por favor inténtalo de nuevo más tarde.",
+      "sending": "Enviando…"
+    }
+  },
+  "credit": {
+    "caption": "Estos materiales fueron creados por la comunidad para la comunidad. ¡Gracias especiales a @pilsenartscommunityhouse en Chicago por su generosidad!",
+    "imageAlt": "Ilustración en grabado de un silbato"
+  },
+  "footer": {
+    "prompt": "¿Han detenido a alguien de tu familia los agentes o eres testigo de una redada en tu comunidad?",
+    "hotlineLabel": "Encuentra una línea directa"
+  }
+}

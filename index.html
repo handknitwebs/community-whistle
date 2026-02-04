@@ -1,16 +1,32 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="community-whistle-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>community-whistle</title>
+    <title>Community Whistle</title>
+    <meta name="description" content="Community Whistle shares whistle codes, safety guidance, and immigration hotline resources to help neighbors alert each other and respond to raids." />
+    <link
+        rel="preload"
+        as="image"
+        href="hero-image.webp"
+        type="image/webp"
+        imagesrcset="hero-image-320.webp 320w, hero-image-480.webp 480w, hero-image-560.webp 560w, hero-image-600.webp 600w, hero-image.webp 644w"
+        imagesizes="(max-width: 900px) calc(100vw - 80px), 644px"
+        fetchpriority="high"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62.5,800&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62.5,800&family=Roboto:wght@100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62.5,800&family=Roboto:wght@100..900&display=swap">
+    </noscript>
 </head>
+
 <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 </body>
+
 </html>

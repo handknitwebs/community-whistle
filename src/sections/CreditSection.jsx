@@ -5,7 +5,7 @@ const CreditSection = ({
   imageAlt = 'Woodcut illustration of a whistle'
 }) => (
   <figure className="credit" aria-labelledby="credit-text">
-    <img src={whistleIllustration} alt={imageAlt} />
+    <img className="credit__image" src={whistleIllustration} alt={imageAlt} />
     <figcaption
       id="credit-text"
       className="body-medium roboto-400 text-center"

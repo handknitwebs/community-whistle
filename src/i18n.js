@@ -12,6 +12,7 @@ i18n
     fallbackLng: 'en',
     supportedLngs: LANGUAGE_CODES,
     nonExplicitSupportedLngs: true,
+    load: 'languageOnly',
     backend: {
       loadPath: '/locales/{{lng}}/translation.json'
     },

@@ -17,6 +17,14 @@ import ListSection from './components/ListSection'
 import { manageMultipleOverflows, resetFontSizes } from './utils/layoutManager'
 
 function App() {
+  const { ready } = useTranslation()
+
+  if (!ready) return <div className="page" aria-busy="true" />
+
+  return <AppContent />
+}
+
+function AppContent() {
   const { t, i18n } = useTranslation()
   const language = i18n.resolvedLanguage || i18n.language || 'en'
   const languageCode = language.split('-')[0]
